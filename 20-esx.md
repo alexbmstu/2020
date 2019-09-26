@@ -14,7 +14,7 @@
 Частичная эмуляция является самым распространенным видом виртуализации в наше время. Основным ее недостатком является зависимость виртуальных машин от конкретной аппаратной архитектуры [3].
 Примеры продуктов для частичной эмуляции: `VMware Workstation, VMware Server, VMware ESXI Server, Virtual Iron, Microsoft Hyper-V Server, Microsoft Virtual PC, Sun VirtualBox, Parallels Desktop` и другие.
 
-В хакатоне мы будем использовать ЦОД под управлением гипервизора `ESXi 6.5` и платформы централизованного управления `VMware vCenter`. Вы можете ознакомиться с документацией по `VMware vCenter` [тут](https://docs.vmware.com/en/VMware-vSphere/index.html)
+В хакатоне мы будем использовать ЦОД под управлением гипервизора `ESXi 6.5` и платформы централизованного управления `VMware vCenter`. Вы можете ознакомиться с документацией по `VMware vCenter` [[тут]](https://docs.vmware.com/en/VMware-vSphere/index.html). В комплекте с `vCenter` предоставляется веб-клиент `VMware vSphere Web Client`, с помощью которого можно управлять виртуальной инфраструктурой через один из распространенных браузеров c поддержкой `Flash Player`).
 
 Для выполнения заданий хакатона для каждой команды выделен пул виртуальных ресурсов:
 
@@ -36,5 +36,41 @@
 
 ![Доступ к VMware vCenter](assets/vmware.png)
 **Доступ к VMware vCenter**
+
+
+
+**Задание**
+
+![](assets/esx_1.png)
+
+![](assets/esx_2.png)
+
+![](assets/esx_3.png)
+
+![](assets/esx_4.png)
+
+![](assets/esx_5.png)
+
+![](assets/esx_6.png)
+
+![](assets/esx_7.png)
+
+![](assets/esx_8.png)
+
+![](assets/esx_9.png)
+
+![](assets/esx_10.png)
+
+![](assets/esx_11.png)
+
+![](assets/esx_12.png)
+
+Сетевые настройки: 
+
+    * Сеть: 195.19.36.64/27
+
+    * Шлюз: 195.19.36.65
+
+    * DNS: 195.19.32.2
 
 
