@@ -150,32 +150,36 @@
 
 Проверьте, что сетевое соединение работает:
 
-   ping www.ya.ru
+    ping www.ya.ru
 
 Если соединение отсуствует, отредактируйте файл /etc/netplan/50-cloud-init.yaml. После этого актуализируйте конфигурацию сети по команде:
 
-   sudo netplan apply
+    sudo netplan apply
 
 Используя терминал операционной системы можно выполнить пинг вашей системы:
 
-   ping 195.19.36.66
+    ping 195.19.36.66
 
-   PING 195.19.36.66 (195.19.36.66) 56(84) bytes of data.
+    PING 195.19.36.66 (195.19.36.66) 56(84) bytes of data.
 
-   64 bytes from 195.19.36.66: icmp_seq=1 ttl=58 time=5.94 ms
+    64 bytes from 195.19.36.66: icmp_seq=1 ttl=58 time=5.94 ms
 
-   64 bytes from 195.19.36.66: icmp_seq=2 ttl=58 time=5.79 ms
+    64 bytes from 195.19.36.66: icmp_seq=2 ttl=58 time=5.79 ms
 
 
 Если ваша система успешно пингуется, то можно подключиться к ней используя терминал с поддержкой протокола SSH (Tilix, Putty, term и пр.).
 В ОС Linux это можно сделать по команде:
 
-   ssh username@ip_address
+    ssh username@ip_address
 
 где ip_address - ip адрес вашей виртуалки.
 
 
 ![](assets/esx_16.png)
+
+****
+## Учтановка Jupyter Notebooks <a name="23"></a>
+
 
 
 
