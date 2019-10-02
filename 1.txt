@@ -523,7 +523,7 @@ Anaconda Distribution это фреймворк с открытым исходн
 
     jupyter notebook >/dev/null 2>&1
 
-Теперь вы можете подключиться к Jupyter Notebook в броузере по адресу:    
+Теперь вы можете подключиться к Jupyter Notebook в броузере по адресу:
 
     http://<ip адрес вашего сервера>:8888/
 
