@@ -193,7 +193,7 @@ Anaconda Distribution это фреймворк с открытым исходн
     tmpfs                               99M     0   99M   0% /run/user/1000
 
 
-Место, выделенное на диске во время установки системы явно недостаточно. Так как мы использовали `LVM`, нам необходимо расширить логиский том за счет имеющегося свободного пространства на диске. Выведем список логических томов:
+Место, выделенное на диске во время установки системы явно недостаточно. Так как мы использовали `LVM`, нам необходимо расширить логический том за счет имеющегося свободного пространства на диске. Выведем список логических томов:
 
     sudo lvdisplay
 
@@ -232,7 +232,7 @@ Anaconda Distribution это фреймворк с открытым исходн
     Max PV                0
     Cur PV                1
     Act PV                1
-    VG Size               <49.00 GiB
+    VG Size               \<49.00 GiB
     PE Size               4.00 MiB
     Total PE              12543
     Alloc PE / Size       1024 / 3.70 GiB
@@ -247,7 +247,7 @@ Anaconda Distribution это фреймворк с открытым исходн
     --- Physical volume ---
     PV Name               /dev/sda3
     VG Name               ubuntu-vg
-    PV Size               &lt;49.00 GiB / not usable 0   
+    PV Size               \<49.00 GiB / not usable 0   
     Allocatable           yes 
     PE Size               4.00 MiB
     Total PE              12543
@@ -273,7 +273,7 @@ Anaconda Distribution это фреймворк с открытым исходн
     LV Write Access        read/write
     LV Creation host, time ubuntu-server, 2019-09-29 15:54:06 +0000
     LV Status              available
-    \# open                 1
+    # open                 1
     LV Size                12.00 GiB
     Current LE             3072
     Segments               1
