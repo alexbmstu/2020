@@ -232,7 +232,7 @@ Anaconda Distribution это фреймворк с открытым исходн
     Max PV                0
     Cur PV                1
     Act PV                1
-    VG Size               \<49.00 GiB
+    VG Size               <49.00 GiB
     PE Size               4.00 MiB
     Total PE              12543
     Alloc PE / Size       1024 / 3.70 GiB
@@ -247,7 +247,7 @@ Anaconda Distribution это фреймворк с открытым исходн
     --- Physical volume ---
     PV Name               /dev/sda3
     VG Name               ubuntu-vg
-    PV Size               \<49.00 GiB / not usable 0   
+    PV Size               <49.00 GiB / not usable 0   
     Allocatable           yes 
     PE Size               4.00 MiB
     Total PE              12543
