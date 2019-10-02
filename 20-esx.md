@@ -128,8 +128,6 @@
 
     IP адрес: выдается организаторами из диапазона 195.19.36.64/27
 
-    Сетевая маска: /16 
-
     Шлюз: 195.19.36.65
 
     DNS: 195.19.32.2
@@ -172,18 +170,271 @@
 
     ssh username@ip_address
 
-где ip_address - ip адрес вашей виртуалки.
 
 
 ![](assets/esx_16.png)
 
 ****
-## Учтановка Jupyter Notebooks <a name="23"></a>
+## Уcтановка фреймворка Anaconda и Jupyter Notebooks <a name="23"></a>
 
 
+Anaconda Distribution это фреймворк с открытым исходным кодом, который объединяет библиотеки и средства разработки кода на языках Python / R для решения задач в области машинного обучения и науки о данных. Anaconda доступна как в виде десктопного приложения на платформах Linux, Windows и Mac OS X, так и в составе серверного ПО. В состав дистрибутива входит более 1500 пакетов Python / R для научных исследований, средста управления бибилиотеками Conda, средства разработки  обучения моделей машинного обучения и глубокого обучения scikit-learn, TensorFlow и Theano, известные бибилотеки для анализа данных (Dask, NumPy, pandas и Numba и т.д.) и визуализации результатов (Matplotlib, Bokeh, Datashader, Holoviews и пр.)
 
 
+Подготовим виртуальную машину к установке дистрибутива. Необходимо по крайней мере 2 ГБ свободного места на жестком диске в томе **/**. Проверим это: 
 
+    df -h
+
+    Filesystem                         Size  Used Avail Use% Mounted on
+
+    udev                               463M     0  463M   0% /dev
+
+    tmpfs                               99M  1.1M   98M   2% /run
+
+    **/dev/mapper/ubuntu--vg-ubuntu--lv  3.9G  3.7G     0 100% /**
+
+    tmpfs                              493M     0  493M   0% /dev/shm
+
+    tmpfs                              5.0M     0  5.0M   0% /run/lock
+
+    tmpfs                              493M     0  493M   0% /sys/fs/cgroup
+
+    /dev/loop0                          89M   89M     0 100% /snap/core/7270
+
+    /dev/sda2                          976M   76M  834M   9% /boot
+
+    tmpfs                               99M     0   99M   0% /run/user/1000
+
+
+Место, выделенное на диске во время установки системы явно недостаточно. Так как мы использовали `LVM`, нам необходимо расширить логиский том за счет имеющегося свободного пространства на диске. Выведем список логических томов:
+
+    sudo lvdisplay
+
+    --- Logical volume ---
+
+    LV Path                **/dev/ubuntu-vg/ubuntu-lv**
+
+    LV Name                ubuntu-lv
+
+    VG Name                **ubuntu-vg**
+
+    LV UUID                nZSozr-hX7F-foyY-op40-8uKp-IYL9-wLplX0
+
+    LV Write Access        read/write
+
+    LV Creation host, time ubuntu-server, 2019-09-29 15:54:06 +0000
+
+    LV Status              available
+
+    # open                 1
+
+    LV Size                4.00 GiB
+
+    Current LE             1024
+
+    Segments               1
+
+    Allocation             inherit
+
+    Read ahead sectors     auto
+
+    - currently set to     256
+
+    Block device           253:0
+
+В отчете указано, что логический том размещен в группе физических томов **ubuntu-vg**, где мы и будем выделять пространство. Уточним, есть ли свободное место в **ubuntu-vg**:
+
+    sudo vgdisplay
+
+    --- Volume group ---
+
+    VG Name               ubuntu-vg
+
+    System ID             
+
+    Format                lvm2
+
+    Metadata Areas        1
+
+    Metadata Sequence No  3
+
+    VG Access             read/write
+
+    VG Status             resizable
+
+    MAX LV                0
+
+    Cur LV                1
+
+    Open LV               1
+
+    Max PV                0
+
+    Cur PV                1
+
+    Act PV                1
+
+    VG Size               <49.00 GiB
+
+    PE Size               4.00 MiB
+
+    Total PE              12543
+
+    Alloc PE / Size       1024 / 3.70 GiB
+
+    Free  PE / Size       11519 / 46.30 GiB
+
+    VG UUID               dvjRPM-MLcl-QsFw-sXPp-72CA-mZpy-Oeb3fy
+
+
+Также можно узнать, на каком из физических дисков емеется свободное пространство (т.к. у нас только один диск, показан будет он)
+
+    sudo pvdisplay
+
+    --- Physical volume ---
+
+    PV Name               /dev/sda3
+
+    VG Name               ubuntu-vg
+
+    PV Size               &lt;49.00 GiB / not usable 0   
+
+    Allocatable           yes 
+
+    PE Size               4.00 MiB
+
+    Total PE              12543
+
+    Free PE               1024
+
+    Allocated PE          11519
+
+    PV UUID               Z1Ya4U-czwy-37JR-DAYw-SDTm-v9JI-oP3zCT
+
+
+В отчете lvdisplay указан системный путь к логическому устройству тома: **/dev/ubuntu-vg/ubuntu-lv**. Расширим его на 2048 блоков по 4 MiB: 
+
+
+    sudo lvextend -l +2048 /dev/ubuntu-vg/ubuntu-lv
+
+    sudo resize2fs /dev/ubuntu-vg/ubuntu-lv 
+
+    sudo lvdisplay
+
+    --- Logical volume ---
+
+    LV Path                /dev/ubuntu-vg/ubuntu-lv
+
+    LV Name                ubuntu-lv
+
+    VG Name                ubuntu-vg
+
+    LV UUID                nZSozr-hX7F-foyY-op40-8uKp-IYL9-wLplX0
+
+    LV Write Access        read/write
+
+    LV Creation host, time ubuntu-server, 2019-09-29 15:54:06 +0000
+
+    LV Status              available
+
+    \# open                 1
+
+    LV Size                **12.00 GiB**
+
+    Current LE             3072
+
+    Segments               1
+
+    Allocation             inherit
+
+    Read ahead sectors     auto
+
+    - currently set to     256
+
+    Block device           253:0
+
+
+Далее уточним состояние логического тома:
+
+    df -h
+
+    Filesystem                         Size  Used Avail Use% Mounted on
+
+    udev                               463M     0  463M   0% /dev
+
+    tmpfs                               99M  1.1M   98M   2% /run
+
+    **/dev/mapper/ubuntu--vg-ubuntu--lv   12G  3.7G   8G  30% /**
+
+    tmpfs                              493M     0  493M   0% /dev/shm
+
+    tmpfs                              5.0M     0  5.0M   0% /run/lock
+
+    tmpfs                              493M     0  493M   0% /sys/fs/cgroup
+
+    /dev/loop0                          89M   89M     0 100% /snap/core/7270
+
+    /dev/sda2                          976M   76M  834M   9% /boot
+
+    tmpfs                               99M     0   99M   0% /run/user/1000
+
+
+Теперь места на диске достаточно, начнем установку Anaconda. Установим дистрибутив в домашней директории пользователя виртуальной машины:
+
+    cd ~
+
+    wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+    
+    chmod +x Anaconda3-2019.03-Linux-x86_64.sh
+
+    bash ./Anaconda3-2019.03-Linux-x86_64.sh
+
+Проверим список установленных пакетов:
+
+    conda list
+
+Обновим устаревшие пакеты:
+
+    conda update conda
+
+Теперь необходимо настроить Jupyter Notebook. Сгенерируем шаблон конфигурационного файла:
+
+    jupyter notebook --generate-config
+
+Теперь добавим в конфигурационный файл, указанный при создании (`~/.jupyter/jupyter_notebook_config.py`) следующие строки:
+
+
+    /# Разрешим доступ из внешней сети
+
+    c.NotebookApp.ip = 'ip адрес вашего сервера'
+
+    c.NotebookApp.open_browser = False
+
+    /# Укажем порт, на котором будет работать Jupyter Notebook
+
+    c.NotebookApp.port = 8888
+
+Далее создадим файл с хешированным паролем:
+
+    jupyter notebook password
+
+
+Теперь все готово для запуска Jupyter Notebook. Вы можете сделать это в консоли по команде:
+
+
+    jupyter notebook &
+
+    или
+
+    jupyter lab &
+
+    если вы не хотите читать лог приложения в консоли, вы можете перенаправить поток сообщений на устройство /dev/null:
+
+    jupyter notebook >/dev/null 2>&1
+
+Теперь вы можете подключиться к Jupyter Notebook в броузере по адресу:    
+
+    http://<ip адрес вашего сервера>:8888/
 
 
 
