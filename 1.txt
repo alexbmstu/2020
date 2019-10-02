@@ -248,11 +248,8 @@
 Используя терминал операционной системы можно выполнить пинг вашей системы:
 
     ping 195.19.36.66
-
     PING 195.19.36.66 (195.19.36.66) 56(84) bytes of data.
-
     64 bytes from 195.19.36.66: icmp_seq=1 ttl=58 time=5.94 ms
-
     64 bytes from 195.19.36.66: icmp_seq=2 ttl=58 time=5.79 ms
 
 
@@ -275,25 +272,15 @@ Anaconda Distribution это фреймворк с открытым исходн
 Подготовим виртуальную машину к установке дистрибутива. Необходимо по крайней мере 2 ГБ свободного места на жестком диске в томе **/**. Проверим это: 
 
     df -h
-
     Filesystem                         Size  Used Avail Use% Mounted on
-
     udev                               463M     0  463M   0% /dev
-
     tmpfs                               99M  1.1M   98M   2% /run
-
-    **/dev/mapper/ubuntu--vg-ubuntu--lv  3.9G  3.7G     0 100% /**
-
+    /dev/mapper/ubuntu--vg-ubuntu--lv  3.9G  3.7G     0 100% /
     tmpfs                              493M     0  493M   0% /dev/shm
-
     tmpfs                              5.0M     0  5.0M   0% /run/lock
-
     tmpfs                              493M     0  493M   0% /sys/fs/cgroup
-
     /dev/loop0                          89M   89M     0 100% /snap/core/7270
-
     /dev/sda2                          976M   76M  834M   9% /boot
-
     tmpfs                               99M     0   99M   0% /run/user/1000
 
 
@@ -302,35 +289,20 @@ Anaconda Distribution это фреймворк с открытым исходн
     sudo lvdisplay
 
     --- Logical volume ---
-
-    LV Path                **/dev/ubuntu-vg/ubuntu-lv**
-
+    LV Path                /dev/ubuntu-vg/ubuntu-lv
     LV Name                ubuntu-lv
-
-    VG Name                **ubuntu-vg**
-
+    VG Name                ubuntu-vg
     LV UUID                nZSozr-hX7F-foyY-op40-8uKp-IYL9-wLplX0
-
     LV Write Access        read/write
-
     LV Creation host, time ubuntu-server, 2019-09-29 15:54:06 +0000
-
     LV Status              available
-
     # open                 1
-
     LV Size                4.00 GiB
-
     Current LE             1024
-
     Segments               1
-
     Allocation             inherit
-
     Read ahead sectors     auto
-
     - currently set to     256
-
     Block device           253:0
 
 В отчете указано, что логический том размещен в группе физических томов **ubuntu-vg**, где мы и будем выделять пространство. Уточним, есть ли свободное место в **ubuntu-vg**:
@@ -338,43 +310,24 @@ Anaconda Distribution это фреймворк с открытым исходн
     sudo vgdisplay
 
     --- Volume group ---
-
     VG Name               ubuntu-vg
-
     System ID             
-
     Format                lvm2
-
     Metadata Areas        1
-
     Metadata Sequence No  3
-
     VG Access             read/write
-
     VG Status             resizable
-
     MAX LV                0
-
     Cur LV                1
-
     Open LV               1
-
     Max PV                0
-
     Cur PV                1
-
     Act PV                1
-
     VG Size               <49.00 GiB
-
     PE Size               4.00 MiB
-
     Total PE              12543
-
     Alloc PE / Size       1024 / 3.70 GiB
-
     Free  PE / Size       11519 / 46.30 GiB
-
     VG UUID               dvjRPM-MLcl-QsFw-sXPp-72CA-mZpy-Oeb3fy
 
 
@@ -383,23 +336,14 @@ Anaconda Distribution это фреймворк с открытым исходн
     sudo pvdisplay
 
     --- Physical volume ---
-
     PV Name               /dev/sda3
-
     VG Name               ubuntu-vg
-
     PV Size               &lt;49.00 GiB / not usable 0   
-
     Allocatable           yes 
-
     PE Size               4.00 MiB
-
     Total PE              12543
-
     Free PE               1024
-
     Allocated PE          11519
-
     PV UUID               Z1Ya4U-czwy-37JR-DAYw-SDTm-v9JI-oP3zCT
 
 
@@ -413,35 +357,20 @@ Anaconda Distribution это фреймворк с открытым исходн
     sudo lvdisplay
 
     --- Logical volume ---
-
     LV Path                /dev/ubuntu-vg/ubuntu-lv
-
     LV Name                ubuntu-lv
-
     VG Name                ubuntu-vg
-
     LV UUID                nZSozr-hX7F-foyY-op40-8uKp-IYL9-wLplX0
-
     LV Write Access        read/write
-
     LV Creation host, time ubuntu-server, 2019-09-29 15:54:06 +0000
-
     LV Status              available
-
     \# open                 1
-
-    LV Size                **12.00 GiB**
-
+    LV Size                12.00 GiB
     Current LE             3072
-
     Segments               1
-
     Allocation             inherit
-
     Read ahead sectors     auto
-
     - currently set to     256
-
     Block device           253:0
 
 
@@ -450,34 +379,22 @@ Anaconda Distribution это фреймворк с открытым исходн
     df -h
 
     Filesystem                         Size  Used Avail Use% Mounted on
-
     udev                               463M     0  463M   0% /dev
-
     tmpfs                               99M  1.1M   98M   2% /run
-
-    **/dev/mapper/ubuntu--vg-ubuntu--lv   12G  3.7G   8G  30% /**
-
+    /dev/mapper/ubuntu--vg-ubuntu--lv   12G  3.7G    8G  30% /
     tmpfs                              493M     0  493M   0% /dev/shm
-
     tmpfs                              5.0M     0  5.0M   0% /run/lock
-
     tmpfs                              493M     0  493M   0% /sys/fs/cgroup
-
     /dev/loop0                          89M   89M     0 100% /snap/core/7270
-
     /dev/sda2                          976M   76M  834M   9% /boot
-
     tmpfs                               99M     0   99M   0% /run/user/1000
 
 
 Теперь места на диске достаточно, начнем установку Anaconda. Установим дистрибутив в домашней директории пользователя виртуальной машины:
 
     cd ~
-
     wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
-    
     chmod +x Anaconda3-2019.03-Linux-x86_64.sh
-
     bash ./Anaconda3-2019.03-Linux-x86_64.sh
 
 Проверим список установленных пакетов:
@@ -496,13 +413,9 @@ Anaconda Distribution это фреймворк с открытым исходн
 
 
     /# Разрешим доступ из внешней сети
-
     c.NotebookApp.ip = 'ip адрес вашего сервера'
-
     c.NotebookApp.open_browser = False
-
     /# Укажем порт, на котором будет работать Jupyter Notebook
-
     c.NotebookApp.port = 8888
 
 Далее создадим файл с хешированным паролем:
