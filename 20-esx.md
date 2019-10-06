@@ -204,7 +204,7 @@
 
 - 2 CPU
 
-- 8 GB RAM
+- 4 GB RAM
 
 - 20 GB HDD. 
 
