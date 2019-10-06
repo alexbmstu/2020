@@ -467,13 +467,9 @@ Anaconda Distribution это фреймворк с открытым исходн
 
 
     jupyter notebook &
-
     # или
-
     jupyter lab &
-
     # если вы не хотите читать лог приложения в консоли, вы можете перенаправить поток сообщений на устройство /dev/null:
-
     jupyter notebook >/dev/null 2>&1
 
 
@@ -484,7 +480,7 @@ Anaconda Distribution это фреймворк с открытым исходн
 Далее:
 
     sudo -i
-    iptables -t nat -A PREROUTING -p tcp -d 195.19.36.66 --dport 8888 -j DNAT --to-destination 192.168.1.2:8888
+    iptables -t nat -A PREROUTING -p tcp -d 195.19.36.** --dport 8888 -j DNAT --to-destination 192.168.1.2:8888
     iptables -t filter -A FORWARD -i ens192 -d 192.168.1.2 -p tcp --dport 8888 -j ACCEPT
 
 Сохраним конфигурацию  iptables в файл:
