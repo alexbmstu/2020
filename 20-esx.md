@@ -242,7 +242,7 @@
 
 Введите следующие команды (замените `**` на ваш ip адрес):
 
-    iptables -t nat -A POSTROUTING -s 192.168.1.2 -o ens192 -j MASQUERADE
+    iptables -t nat -A POSTROUTING -s 192.168.1.2 -o ens160 -j MASQUERADE
     iptables -t nat -A PREROUTING -p tcp -d 195.19.36.** --dport 2022 -j DNAT --to-destination 192.168.1.2:22
     iptables -t filter -A FORWARD -i ens192 -d 192.168.1.2 -p tcp --dport 2022 -j ACCEPT
 
