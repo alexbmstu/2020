@@ -5,7 +5,7 @@
 # Менторы хакатона
 
 
-|   <img src="assets/aleksei_popov.png" width="150"> |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/bader_rasheed.png" width="150">  |  <img src="assets/bogdan_salyp.png" width="150">  |  <img src="assets/anon.png" width="150">  |  <img src="assets/dulshan_heva_kodippilige.png" width="150">  |
+|   <img src="assets/aleksei_popov.png" width="150"> |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/bader_rasheed.png" width="150">  |  <img src="assets/bogdan_salyp.png" width="150">  |  <img src="assets/ishitha.png" width="150">  |  <img src="assets/dulshan_heva_kodippilige.png" width="150">  |
 |: --------------------------------------- :|: --------------------------------------- :|
 |   [Алексей Попов, к.т.н., доцент](mailto:alexpopov@bmstu.ru), <br> *МГТУ им. Н.Э.Баумана*   |   [Егор Дубровин](mailto:dubrovin.en@ya.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Бадер Рашид](mailto:brasheedengineer@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Богдан Салып](mailto:bogdansalyp@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Ишитха Раджапаксе](mailto:ishitha.anjana@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Дульшан Хева Кодиппилиге](mailto:dulshanbhashitha@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |  
 
