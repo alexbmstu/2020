@@ -298,12 +298,12 @@ UMAP –  t-SNE очень хорошо работает с большими н�
 Импортируем библиотеки, нужные нам для работы
 
 ```python
-# data analysis and wrangling
+ # data analysis and wrangling
 import pandas as pd
 import numpy as np
 import random as rnd
 
-# visualization
+ # visualization
 import seaborn as sns
 import matplotlib.pyplot as plt
 %matplotlib inline 
