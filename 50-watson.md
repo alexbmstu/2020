@@ -9,7 +9,7 @@
 
 Набор средств машинного обучения и анализа данных Watson Studio очень широк и позволяет решать задачи ИИ, в том числе с использованием распределенных вычислений и GPGPU.
 
-Для выбора средст машинного обучения для решения практических задач следует ознакомиться с инструкцией: [Choosing a tool in Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/tools.html?audience=wdp&context=wdp)
+Для знакомства с имеющимися средства машинного обучения и анализа данных следует ознакомиться с инструкцией: [Choosing a tool in Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/tools.html?audience=wdp&context=wdp)
 
 
 ## Регистрация в IBM Cloud и получение студенческого промо-кода <a name="5_1"></a>
@@ -27,7 +27,7 @@
 - Зарегистрировать промо код в вашем аккоунте IBM Cloud (инструкция доступна на странице заказа промо-кода). 
 
 
-Доступ к платформе осуществляется по адресу [cloud.ibm.com](https://cloud.ibm.com).
+Доступ к платформе осуществляется по адресу [cloud.ibm.com](https://cloud.ibm.com/login).
 
 
 ![Облачная платформа PaaS *IBM Cloud*](assets/IBMcloud_01.png)
@@ -38,7 +38,7 @@
 **Дополнительные источники литературы по данному разделу:**
 
 - [Описание ресурсов IBM Cloud](https://www.ibm.com/ru-ru/cloud)
-
+- [Introduction to IBM Watson Studio](https://developer.ibm.com/articles/introduction-watson-studio/)
 
 ## Облачная платформа *IBM Cloud* <a name="5_2"></a>
 
@@ -72,6 +72,9 @@
 -   сервисов DevOps Services (прежнее название: JazzHub).
 -   проприетарные сервисы IBM, включая аналитическую систему SPSS и другие. 
 -   когнитивные сервисы IBM Watson.
+
+![Компоненты IBM Cloud для анализа данных и ИИ](assets/IBMcloud_03.png)
+**Компоненты IBM Cloud для анализа данных и ИИ**
 
 
 ****
