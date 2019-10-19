@@ -30,7 +30,7 @@
 Доступ к платформе осуществляется по адресу [cloud.ibm.com](https://cloud.ibm.com).
 
 
-![Облачная платформа PaaS *IBM Cloud*](assets/IBMcloud_01.jpg)
+![Облачная платформа PaaS *IBM Cloud*](assets/IBMcloud_01.png)
 **Облачная платформа PaaS IBM Cloud**
 
 
@@ -54,7 +54,7 @@
 -   оптимизация и эластичная адаптация к рабочей нагрузке.
 
 
-![Каталог компонентов IBM Cloud](assets/IBMcloud_02.jpg)
+![Каталог компонентов IBM Cloud](assets/IBMcloud_02.png)
 **Каталог компонентов IBM Cloud**
 
 
