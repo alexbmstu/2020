@@ -1382,7 +1382,9 @@ coeff_df.sort_values(by='Correlation', ascending=False)
 
 Положительные значения коэффициентов говорят об увеличении вероятности долголетия при росте соответствующего критерия. Отметим, что регрессия учитывает знаки чисел, поэтому большие отрицательные значения также также указывают на сильное влияние с обратной зависимостью. 
 
-[Логистическая регрессия в Python: от теории до трейдинга](http://distrland.blogspot.com/2019/05/python.html)
+**Дополнительные источники литературы по данному разделу:**
+
+- [Логистическая регрессия в Python: от теории до трейдинга](http://distrland.blogspot.com/2019/05/python.html)
 
 
 ### Задание <a name="4_6_3"></a>
@@ -1427,10 +1429,11 @@ models.sort_values(by='Score', ascending=False)
 В этом задании мы рассмотрим средства и алгоритмы компьютерного зрения и решим задачу распозавания объектов на серии фотографий. 
 
 
+**Дополнительные источники литературы по данному разделу:**
 
+- [Basic classification: Classify images of clothing](https://www.tensorflow.org/tutorials/keras/classification)
 
-[Basic classification: Classify images of clothing](https://www.tensorflow.org/tutorials/keras/classification)
-[Что такое Keras](https://neurohive.io/ru/tutorial/nejronnaya-set-keras-python/)
+- [Что такое Keras](https://neurohive.io/ru/tutorial/nejronnaya-set-keras-python/)
 
 ****
 # День 5. Облачная платформа IBM Cloud и платформа ИИ Watson Studio <a name="6"></a>
