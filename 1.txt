@@ -1429,10 +1429,10 @@ models.sort_values(by='Score', ascending=False)
 
 В этом задании мы рассмотрим средства и алгоритмы компьютерного зрения и решим тестовую задачу распозавания объектов на серии фотографий с испольованием библиотек `Tensorflow` и `Keras`. 
 
-Мы разработаем программный код для распознавания объектов на фотографиях. Будем использовать небольшую обучающую выборку задачи распознавания Маффинов и Чиахуахуа:
+Мы разработаем программный код для распознавания объектов на фотографиях. Будем использовать небольшую обучающую выборку задачи распознавания :
 
-<img src="assets/cv_01.jpg" width="500">
-**Классика жанра: Маффин или Чиахуахуа?**
+<img src="assets/cv_01.png" width="500">
+**Классика жанра**
 
 
 **Дополнительные источники литературы по данному разделу:**
@@ -1441,6 +1441,7 @@ models.sort_values(by='Score', ascending=False)
 
 - [Что такое Keras](https://neurohive.io/ru/tutorial/nejronnaya-set-keras-python/)
 
+- [List of datasets for machine-learning research](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research)
 ****
 # День 5. Облачная платформа IBM Cloud и платформа ИИ Watson Studio <a name="6"></a>
 
