@@ -55,6 +55,15 @@
 		- [Задание](#4_6_3)
 		- [Оценка моделей](#4_6_4)
 - [День 4. Распознавание образов и компьютерное зрение](#5)
+	- [Серточны нейронные сети](#5_1)
+	- [Библиотека Tensorflow](#5_2)
+	- [Пример использования Tensorflow и Keras](#5_3)
+- [TensorFlow and tf.keras
+- [import keras.utils
+- [Helper libraries
+- [Pillow
+- [Use Pillow library to convert an input jpeg to a 8 bit grey scale image array for processing.
+- [Setting up the layers.
 - [День 5. Облачная платформа IBM Cloud и платформа ИИ Watson Studio](#6)
 	- [Регистрация в IBM Cloud и получение студенческого промо-кода](#6_1)
 	- [Облачная платформа *IBM Cloud*](#6_2)
