@@ -670,6 +670,9 @@ Anaconda Distribution это фреймворк с открытым исходн
 
 - [Масштабирование данных данных (en)](https://codefellows.github.io/sea-python-401d5/lectures/rescaling_data.html#)
 
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
+
+
 
 ### Алгоритм отбора признаков<a name="3_2_4"></a>
 
@@ -950,6 +953,11 @@ train_df.nunique() 	# количество уникальных значений
 **Гипотеза** - предположение относительно параметров совокупности объектов, которое должно быть проверено на ее части. Гипотеза - частично обоснованная закономерность знаний, служащая либо для связи между различными эмпирическими фактами, либо для объяснения факта или группы фактов.
 
 
+**Дополнительные источники литературы по данному разделу:**
+
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
+
+
 ### Описание задачи и данных <a name="3_3_2"></a>
 
 
@@ -1100,6 +1108,11 @@ grid.add_legend()
 
 Сделайте выводы.
 
+**Дополнительные источники литературы по данному разделу:**
+
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
+
+
 ### Задание <a name="3_3_3"></a>
 
 1) Признак Age должен быть дополнен и фильтрован для обработки алгоритмами.
@@ -1122,6 +1135,8 @@ grid.add_legend()
 
 
 **Дополнительные источники литературы по данному разделу:**
+
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
 
 - [Введение в pandas: анализ данных на Python](https://khashtamov.com/ru/pandas-introduction/)	
 
@@ -1176,6 +1191,9 @@ grid.add_legend()
 
 - [Регрессионный анализ. Кольцов С.Н.](https://www.hse.ru/data/2014/08/29/1313619461/%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%205.pdf)
 
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
+
+
 ###  Деревья решений<a name="4_3_2"></a>
 
 *Деревья решений* - это это способ представления правил в иерархической виде, где каждому объекту соответствует единственный узел, пораждающий решение. Структура дерева представляет собой «листья» и «ветки». На рёбрах дерева решения записаны атрибуты, от которых зависит целевая функция, в «листьях» записаны значения целевой функции, а в остальных узлах - атрибуты, по которым различаются случаи.
@@ -1196,6 +1214,9 @@ grid.add_legend()
 - [Деревья решений — общие принципы работы](https://basegroup.ru/community/articles/description)
 
 - [Открытый курс машинного обучения](https://habr.com/ru/company/ods/blog/322534/)
+
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
+
 
 
 ###  Метод опорных векторов<a name="4_3_3"></a>
@@ -1225,6 +1246,7 @@ grid.add_legend()
 
 - [Классификация данных методом опорных векторов](https://habr.com/ru/post/105220/)
 
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
 
 
 ###  Алгоритм k-ближайших соседей<a name="4_3_4"></a>
@@ -1253,6 +1275,7 @@ kNN (k Nearest Neighbor) – алгоритм *k-ближайших соседе
 
 - [Метод k-ближайших соседей. Wiki](https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_k-%D0%B1%D0%BB%D0%B8%D0%B6%D0%B0%D0%B9%D1%88%D0%B8%D1%85_%D1%81%D0%BE%D1%81%D0%B5%D0%B4%D0%B5%D0%B9)
 
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
 
 
 ## Оценка и тестирование модели <a name="4_4"></a>
@@ -1385,6 +1408,8 @@ coeff_df.sort_values(by='Correlation', ascending=False)
 **Дополнительные источники литературы по данному разделу:**
 
 - [Логистическая регрессия в Python: от теории до трейдинга](http://distrland.blogspot.com/2019/05/python.html)
+
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
 
 
 ### Задание <a name="4_6_3"></a>
@@ -1648,11 +1673,15 @@ plot_history([('Первая модель', first_model_history),
 
 **Дополнительные источники литературы по данному разделу:**
 
+
 - [Basic classification: Classify images of clothing](https://www.tensorflow.org/tutorials/keras/classification)
 
 - [Что такое Keras](https://neurohive.io/ru/tutorial/nejronnaya-set-keras-python/)
 
 - [List of datasets for machine-learning research](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research)
+
+- [Курс по машинному обучению](https://github.com/bogdansalyp/ml_course)	
+
 ****
 # День 5. Облачная платформа IBM Cloud и платформа ИИ Watson Studio <a name="6"></a>
 
