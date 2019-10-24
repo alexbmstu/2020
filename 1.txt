@@ -1448,7 +1448,7 @@ models.sort_values(by='Score', ascending=False)
 Загрузите архив с графическими файлами на сервер:
 
 ```shell
-wget https://github.com/alexbmstu/2019/blob/master/data/chihuahua-muffin.zip
+wget https://github.com/alexbmstu/2019/raw/master/data/chihuahua-muffin.zip
 unzip chihuahua-muffin.zip
 cd chihuahua-muffin
 ```
@@ -1636,6 +1636,14 @@ plot_history([('Первая модель', first_model_history),
 
 ![](assets/cv_03.png)
 **Сравнение истории обучения моделей**
+
+
+## Задание <a name="5_4"></a>
+
+1) Разработайте 4-6 различных моделей, меняя количество эпох обучения и свойства изображения.
+
+2) Добейтесь точности распознавания >=92%.
+
 
 
 **Дополнительные источники литературы по данному разделу:**
