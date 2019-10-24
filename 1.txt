@@ -1455,7 +1455,7 @@ cd chihuahua-muffin
 
 Вы можете использовать терминал из Jupyter Notebooks.
 
-<img src="assets/cv_02.png" width="500">
+![](assets/cv_02.png)
 **Терминал Jupyter Notebooks**
 
 или перенесите файлы любым другим способом:
@@ -1634,8 +1634,8 @@ plot_history([('Первая модель', first_model_history),
               ('Вторая модель', second_model_history)])
 ```
 
-<img src="assets/cv_0	3.png" width="500">
-**Сравнения истории обучения моделей**
+![](assets/cv_03.png)
+**Сравнение истории обучения моделей**
 
 
 **Дополнительные источники литературы по данному разделу:**
