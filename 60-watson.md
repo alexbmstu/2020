@@ -147,7 +147,7 @@
 
 ### Создание проекта и хранилища данных в IBM Watson Studio <a name="6_3_1"></a>
 
-Войдите в IBM Watson Studio. 
+Войдите в IBM Watson Studio в домене **London** (!!!). 
 
 ![](assets/IBMcloud_05.png)
 
@@ -238,7 +238,12 @@ df_data = spark.read\
 ![](assets/IBMcloud_16.png)
 
 
-Дальше мы развернем это приложение с помощью сервиса Cloud Foundry в IBM Cloud. Для этого нам понадобьится
+Дальше мы развернем это приложение с помощью сервиса Cloud Foundry в IBM Cloud. Для этого нужно перейти по следующей ссылке:
+
+[Развернуть приложение](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/predictive-model-on-watson-ml&env_id=ibm:yp:eu-gb)
+
+[Развернуть приложение](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/alexbmstu/2019&env_id=ibm:yp:eu-gb)
+
 
 Во время этого процесса вам может быть предложено ввести IBM Cloud API Key. Используйте кнопку «Create (+)» для автоматического заполнения этого и других полей.
 

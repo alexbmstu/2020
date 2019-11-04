@@ -84,13 +84,13 @@ var	ResultsCtrl = ['$scope',	'$modalInstance',	'rspHeader', 'rspData', function 
 	formattedData.push(rspData.values[0][3].toString()); // BMI
 	formattedData.push(rspData.values[0][0].toString()); // AVGHEARTBEATSPERMIN
 	formattedData.push(rspData.values[0][1].toString()); // PALPITATIONSPERDAY
-	if (rspData.values[0][17] == 'Y')  // PREDICTION
+	if (rspData.values[0][16] == 1)  // PREDICTION
 	   formattedData.push('Yes');
     else
 	   formattedData.push('No');
 
    // Format confidence
-    if (rspData.values[0][17] == 'Y')  // CONFIDENCE
+    if (rspData.values[0][16] == 1)  // CONFIDENCE
        confidence = (rspData.values[0][16][1] * 100).toFixed(2) + '%';
     else
 	   confidence = (rspData.values[0][16][0] * 100).toFixed(2) + '%';
