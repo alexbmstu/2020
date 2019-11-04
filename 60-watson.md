@@ -240,14 +240,34 @@ df_data = spark.read\
 
 Дальше мы развернем это приложение с помощью сервиса Cloud Foundry в IBM Cloud. Для этого нужно перейти по следующей ссылке:
 
-[Развернуть приложение](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/predictive-model-on-watson-ml&env_id=ibm:yp:eu-gb)
-
 [Развернуть приложение](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/alexbmstu/2019&env_id=ibm:yp:eu-gb)
 
 
 Во время этого процесса вам может быть предложено ввести IBM Cloud API Key. Используйте кнопку «Create (+)» для автоматического заполнения этого и других полей.
 
+![](assets/IBMcloud_17.png)
 
+Когда решение будет развернуто, необходимо настроить связь Node.js с сервисом ML. 
+
+![](assets/IBMcloud_18.png)
+
+Для этого в настройках приложения Cloud Foundry выберите пункт Connections и создайте новое соединение со службой ML (имя службы начинается на pm-20).
+
+![](assets/IBMcloud_19.png)
+
+Далее необходимо перезапустить приложение Cloud Foundry и перейти по ссылке Visit App URL.
+
+![](assets/IBMcloud_20.png)
+
+### Задание <a name="6_3_3"></a>
+
+Исправьте ошибку в коде приложения таким образом, чтобы результат в поле Confidence воспроизводился корректно:
+
+![](assets/IBMcloud_21.png)
+
+Для развертывания приложения вы можете использовать консоль на вкладке Runtime->SSH
+
+![](assets/IBMcloud_22.png)
 
 
 **Дополнительные источники литературы по данному разделу:**
