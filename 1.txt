@@ -1498,9 +1498,18 @@ form {
     border: 1px solid #ccc;
 }
 </style>
+```
+
+Заголовочная часть:
+```html
 <head>
     <title>Хакатон МГТУ им Н.Э.Баумана</title>
 </head>
+```
+
+И основная форма:
+
+```html
 <form action="{{ url_for('main') }}" method="POST">
     <fieldset>
         <legend>Input values:</legend>
