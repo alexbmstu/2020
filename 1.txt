@@ -1140,6 +1140,8 @@ grid.add_legend()
 
 - [Введение в pandas: анализ данных на Python](https://khashtamov.com/ru/pandas-introduction/)	
 
+- [Развертывание модели машинного обучения Python в качестве веб-службы](https://developer.ibm.com/tutorials/deploy-a-python-machine-learning-model-as-a-web-service/)
+
 
 
 
