@@ -5,13 +5,9 @@
 # Менторы хакатона
 
 
-|   <img src="assets/aleksei_popov.png" width="150"> |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/bogdan_salyp.png" width="150">  |  <img src="assets/ishitha.png" width="150">  |
+|   <img src="assets/aleksei_popov.png" width="150"> |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/bogdan_salyp.png" width="150">  |  <img src="assets/ishitha.png" width="150">  |
 |: --------------------------------------- :|: --------------------------------------- :|
-|   [Алексей Попов, к.т.н., доцент](mailto:alexpopov@bmstu.ru), <br> *МГТУ им. Н.Э.Баумана*   |   [Егор Дубровин](mailto:dubrovin.en@ya.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Богдан Салып](mailto:bogdansalyp@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Ишитха Раджапаксе](mailto:ishitha.anjana@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    | 
-|   <img src="assets/569_oooo.plus.png" width="150"> |  <img src="assets/892_oooo.plus.png" width="150">  |  <img src="assets/arepin.png" width="150">  |  <img src="assets/bader_rasheed.png" width="150">  |  <img src="assets/dulshan_heva_kodippilige.png" width="150">  |
-|   [Анастасия Рикунова](mailto:anon@anon.ru), <br> *Первый МГМИ им. И.М.Сеченова*   |   [Константин Горбунов](mailto:anon@anon.ru)  <br>  *ФНКЦ ФХМ ФМБА России*   |   [Андрей Репин](mailto:anon@anon.ru)  <br>  *Компания Visiology*   |   [Бадер Рашид](mailto:brasheedengineer@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Дульшан Хева Кодиппилиге](mailto:dulshanbhashitha@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |
-
-
+|   [Алексей Попов, к.т.н., доцент](mailto:alexpopov@bmstu.ru), <br> *МГТУ им. Н.Э.Баумана*   |   [Станислав  Ибрагимов](mailto:ibragimov@bmstu.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Егор Дубровин](mailto:dubrovin.en@ya.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Сергей Малышев](mailto:bogdansalyp@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Руфина Абдурахманова](mailto:ishitha.anjana@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    | 
  
 
 ---
