@@ -5,9 +5,9 @@
 # Менторы хакатона
 
 
-|   <img src="assets/aleksei_popov.png" width="150"> |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/bogdan_salyp.png" width="150">  |  <img src="assets/ishitha.png" width="150">  |
+|   <img src="assets/aleksei_popov.png" width="150"> |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/egor_dubrovin.png" width="150">  |  <img src="assets/725_oooo.plus" width="150">  |  <img src="assets/780_oooo.plus" width="150">  |
 |: --------------------------------------- :|: --------------------------------------- :|
-|   [Алексей Попов, к.т.н., доцент](mailto:alexpopov@bmstu.ru), <br> *МГТУ им. Н.Э.Баумана*   |   [Станислав  Ибрагимов](mailto:ibragimov@bmstu.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Егор Дубровин](mailto:dubrovin.en@ya.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Сергей Малышев](mailto:bogdansalyp@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Руфина Абдурахманова](mailto:ishitha.anjana@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    | 
+|   [Алексей Попов, к.т.н., доцент](mailto:alexpopov@bmstu.ru), <br> *МГТУ им. Н.Э.Баумана*   |   [Станислав  Ибрагимов](mailto:ibragimov@bmstu.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Егор Дубровин](mailto:dubrovin.en@ya.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Сергей Малышев](mailto:agent.serega@yandex.ru)  <br>  *МГТУ им. Н.Э.Баумана*    |   [Руфина Абдурахманова](mailto:roofinda@gmail.com)  <br>  *МГТУ им. Н.Э.Баумана*    | 
  
 
 ---
